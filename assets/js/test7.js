@@ -19,7 +19,7 @@ $(function(){
   //boxを生成
   function createElements(){
     //配列を作成
-    boxArr = [];
+    boxArr = [ "width","height","top","left"];
     for(var i = 0; i < yLine; i++){
       for(var n = 0; n < xLine; n++){
         $container.append("<div class='box box"+i+"_"+n+"'></div");
@@ -47,8 +47,9 @@ $(function(){
   }
 
   //↓連想配列ｘ多次元配列を確認する
-  //console.log(boxArr);
-  var rArr = [];
+  // console.log(boxArr);
+
+  var rArr = [ "boxArr"];
   function createRandom(){
     //ランダムの値を入れる配列を用意
     var num = boxArr.length;
